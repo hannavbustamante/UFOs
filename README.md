@@ -32,7 +32,6 @@ For this project I am using **JavaScript** as the primary coding language. It is
 - **Data Source:** JavaScript list [data.js](static/js/data.js)
 - **Software:** VS Code and Chrome Developer Tools, 
 - **Languages:** JavaScript, HTML, CSS and Bootstrap 3
-- **Dependencies:** D3
 
 ## Results
 Raw data from JavaScript array is now displayed in a dynamic table where users can filter data on multiple criteria by **date**, **city**, **state**, **country** and **shape** of UFOs sighting. In the filter input box is suggested text of how search criteria should be entered by user. For example, date should be entered in format as in 1/10/2010 – with forward slashes and without extra 0 before day and month. City, state, country and shape should be entered in lower case.
