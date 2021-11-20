@@ -7,3 +7,10 @@ body {
     background-size: 100% 100%;
     text-align: center;
 }
+
+label {
+    max-width:300px;
+    display:block;
+  }
+
+
