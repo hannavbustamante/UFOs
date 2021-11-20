@@ -60,13 +60,11 @@ function updateFilters() {
     // 8. Set the filtered data to the tableData.
     let filteredData = tableData;
   
-    if (isNotEmpty(filters)) {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
     for (const [key, value] of Object.entries(filters)) {
         filteredData = filteredData.filter(row => row[key] === value);
     }
-}
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
     
@@ -77,11 +75,3 @@ d3.selectAll("input").on("change", updateFilters);
   
   // Build the table when the page loads
 buildTable(tableData);
-
-const isNotEmpty = (obj) => {
-    for(let key in obj) {
-        if(obj.hasOwnProperty(key))
-            return true;
-    }
-    return false;
-}
